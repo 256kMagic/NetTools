@@ -35,5 +35,5 @@ The tool uses a synchronous approach for vendor lookups to ensure reliability, a
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/NetTools-v1.git
+   git clone https://github.com/256kmagic/NetTools-v1.git
    cd NetTools-v1
