@@ -1,4 +1,4 @@
-# NetTools-v1
+# NetTools
 
 A Python-based subnet scanner to discover live hosts, retrieve MAC addresses, identify NIC vendors, and scan for open ports with service detection.
 
