@@ -2,6 +2,8 @@
 
 A Python-based subnet scanner to discover live hosts, retrieve MAC addresses, identify NIC vendors, and scan for open ports with service detection.
 
+[![CI](https://github.com/256kMagic/NetTools/actions/workflows/ci.yml/badge.svg)](https://github.com/256kMagic/NetTools/actions/workflows/ci.yml)
+
 ## Overview
 
 `nettool-v8.py` is a command-line tool designed for network reconnaissance on Windows. It performs:
@@ -35,5 +37,23 @@ The tool uses a synchronous approach for vendor lookups to ensure reliability, a
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/256kmagic/NetTools-v1.git
-   cd NetTools-v1
+   git clone https://github.com/256kMagic/NetTools.git
+   cd NetTools
+   ```
+2. Install dependencies:
+   ```bash
+   pip install colorama tqdm python-nmap
+   ```
+3. Install Nmap and ensure it is on your PATH.
+
+## Usage
+```bash
+python nettool-v8.py 192.168.1.0/24
+```
+
+## Notes
+- Requires Windows with admin rights for ARP and Nmap.
+- Ensure `mac_vendors.txt` is present in the repo root for vendor mapping.
+
+## License
+MIT License. See [LICENSE](LICENSE).
